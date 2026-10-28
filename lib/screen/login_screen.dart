@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'main_nav.dart';
 import 'dashboard_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -28,9 +29,10 @@ class _LoginScreenState extends State<LoginScreen> {
 
     if (mounted) {
       setState(() => _isLoading = false);
+      // CUKUP SATU KALI SAJA pindah ke MainNavigationScreen
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (_) => const DashboardScreen()),
+        MaterialPageRoute(builder: (_) => const MainNavigationScreen()),
       );
     }
   }
