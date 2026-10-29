@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dashboard_screen.dart';
 import 'my_ticket_screen.dart';
+import 'profile_screen.dart';
 
 class MainNavigationScreen extends StatefulWidget {
   const MainNavigationScreen({super.key});
@@ -15,6 +16,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
   final List<Widget> _pages = const [
     DashboardScreen(),  // Tab 1: Dashboard Utama
     MyTicketsScreen(),  // Tab 2: Dashboard Tiket Saya & Progres
+    ProfileScreen(),   // Tab 3: Profil
   ];
 
   @override
@@ -64,6 +66,11 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                     icon: Icon(Icons.confirmation_number_outlined),
                     activeIcon: Icon(Icons.confirmation_number_rounded),
                     label: 'Tiket Saya',
+                  ),
+                  BottomNavigationBarItem(
+                    icon: Icon(Icons.person_outline_rounded),
+                    activeIcon: Icon(Icons.person_rounded),
+                    label: 'Akun',
                   ),
                 ],
               ),
