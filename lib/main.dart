@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'screen/login_screen.dart';
-
+// import 'screen/login_screen.dart';
+import 'screen/splash_screen.dart';
 void main() {
   runApp(const CampusCareApp());
 }
@@ -23,7 +23,7 @@ class CampusCareApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: const LoginScreen(),
+      home: const SplashScreen(),
     );
   }
 }
